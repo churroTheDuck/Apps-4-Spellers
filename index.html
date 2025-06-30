@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Apps 4 Spellers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <link rel="stylesheet" href="style.css" />
+    <div class="header">
+        <p class="link" id="link">Apps 4 Spellers</p>
+    </div>
+    <div style="display:flex">
+        <div class="section">
+            <h1>Welcome to Apps 4 Spellers</h1>
+            <h2>Mobile applications designed specifically for people with speech and fine motor difficulties.</h2>
+        </div>
+        <div class="section">
+            <img class="display" src="display.png">
+        </div>
+    </div>
+    <div class="grid">
+        <div class="bubble" id="s2s-link">
+            <img class="icon" src="s2s-icon.png">
+            <div class="row">
+                <h2>Spell 2 Speak</h2>
+            </div>
+            <p>Spell 2 Speak is designed to help anyone who cannot rely soly on speech for communication. It features a
+                large alphabet keyboard that allows users to communicate by spelling.</p>
+        </div>
+        <div class="bubble" id="mk-link">
+            <img class="icon" src="mk-icon.png">
+            <div class="row">
+                <h2>Mega Key</h2>
+            </div>
+            <p>Mega Key is a large custom keyboard that can be used in other applications.</p>
+        </div>
+        <div class="bubble" id="mc-link">
+            <img class="icon" src="mc-icon.png">
+            <div class="row">
+                <h2>Math Composer</h2>
+            </div>
+            <p>Math Composer is an iPad app for writing math equations digitally using a large keyboard with math
+                symbols and operators.</p>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="bubble" id="sc-link">
+            <img class="icon" src="sc-icon.png">
+            <div class="row">
+                <h2>Speller Chess</h2>
+            </div>
+            <p>Speller Chess is a 2 player chess app with simple controls.</p>
+        </div>
+        <div class="bubble" id="sg-icon">
+            <img class="icon" src="sg-icon.png">
+            <div class="row">
+                <h2>Speller Gomoku</h2>
+            </div>
+            <p>Speller Gomoku is a 2 player game where you try to get 5 pieces in a row.</p>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("link").addEventListener("click", function () {
+        window.open("index.html");
+    })
+    document.getElementById("s2s-link").addEventListener("click", function () {
+        window.open("s2s.html");
+    })
+    document.getElementById("mk-link").addEventListener("click", function () {
+        window.open("mk.html");
+    })
+    document.getElementById("mc-link").addEventListener("click", function () {
+        window.open("mc.html");
+    })
+</script>
+
+</html>
