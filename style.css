@@ -18,20 +18,12 @@ body {
     margin: 0px;
 }
 
-.link {
-    color: #0D1B2A;
-    cursor: pointer;
-    margin: 0px;
-    padding: 20px;
-    padding-left: 60px;
-}
-
 h1 {
     display: block;
     color: #0D1B2A;
     text-align: left;
     font-weight: bold;
-    font-size: 50px;
+    font-size: clamp(2rem, 5vw, 3.125rem); /* ~32px–50px */
     margin: 0px;
     padding: 20px;
     padding-left: 10px;
@@ -42,7 +34,7 @@ h2 {
     display: inline-block;
     color: #0D1B2A;
     text-align: left;
-    font-size: 30px;
+    font-size: clamp(1.5rem, 4vw, 1.875rem); /* ~24px–30px */
     font-weight: normal;
     margin: 0px;
     padding: 10px;
@@ -52,7 +44,7 @@ p {
     display: inline-block;
     color: #0D1B2A;
     text-align: left;
-    font-size: 20px;
+    font-size: clamp(1rem, 3vw, 1.25rem); /* ~16px–20px */
     font-weight: normal;
     margin: 0px;
     padding: 10px;
@@ -64,11 +56,20 @@ button {
     height: 1%;
     color: #0D1B2A;
     text-align: left;
-    font-size: 20px;
+    font-size: clamp(1rem, 2.5vw, 1.25rem); /* ~16px–20px */
     font-weight: normal;
     margin-top: auto;
     margin-bottom: auto;
     padding: 10px;
+}
+
+.link {
+    color: #0D1B2A;
+    cursor: pointer;
+    margin: 0px;
+    padding: 20px;
+    padding-left: 60px;
+    font-size: clamp(1rem, 2.5vw, 1.25rem); /* ~16px–20px */
 }
 
 .section {
