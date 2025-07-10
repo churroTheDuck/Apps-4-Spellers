@@ -23,18 +23,16 @@ h1 {
     color: #0D1B2A;
     text-align: left;
     font-weight: bold;
-    font-size: clamp(2rem, 5vw, 3.125rem); /* ~32px–50px */
+    font-size: clamp(24px, 4vw, 40px);
     margin: 0px;
-    padding: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 20px 10px;
 }
 
 h2 {
     display: inline-block;
     color: #0D1B2A;
     text-align: left;
-    font-size: clamp(1.5rem, 4vw, 1.875rem); /* ~24px–30px */
+    font-size: clamp(18px, 2.5vw, 32px);
     font-weight: normal;
     margin: 0px;
     padding: 10px;
@@ -44,7 +42,7 @@ p {
     display: inline-block;
     color: #0D1B2A;
     text-align: left;
-    font-size: clamp(1rem, 3vw, 1.25rem); /* ~16px–20px */
+    font-size: clamp(14px, 2vw, 24px);
     font-weight: normal;
     margin: 0px;
     padding: 10px;
@@ -56,7 +54,7 @@ button {
     height: 1%;
     color: #0D1B2A;
     text-align: left;
-    font-size: clamp(1rem, 2.5vw, 1.25rem); /* ~16px–20px */
+    font-size: clamp(12px, 1.5vw, 18px);
     font-weight: normal;
     margin-top: auto;
     margin-bottom: auto;
@@ -67,9 +65,8 @@ button {
     color: #0D1B2A;
     cursor: pointer;
     margin: 0px;
-    padding: 20px;
-    padding-left: 60px;
-    font-size: clamp(1rem, 2.5vw, 1.25rem); /* ~16px–20px */
+    padding: 20px 0px 20px 60px;
+    font-size: clamp(14px, 1.5vw, 22px);
 }
 
 .section {
@@ -77,14 +74,14 @@ button {
     flex-direction: column;
     justify-content: top;
     align-items: left;
-    width: 50%;
+    width: 100%;
     background-color: #778DA9;
     padding: 40px;
 }
 
 .display {
     display: inline-block;
-    width: 100%;
+    width: 80%;
     margin: 0px;
     padding: 10px;
 }
@@ -104,8 +101,7 @@ button {
     height: 400px;
     background-color: #778DA9;
     border-radius: 20px;
-    margin: 20px;
-    margin-bottom: 0px;
+    margin: 20px 20px 0px 20px;
     padding: 20px;
     transition: transform .2s;
 }
@@ -113,6 +109,12 @@ button {
 .bubble:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+    .grid {
+        flex-direction: column;
+    }
 }
 
 .row {
