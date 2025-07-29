@@ -28,17 +28,84 @@
         </div>
     </div>
     <div style="display:flex">
-        <div class="section" style="background-color: #E0E1DD;">
+        <div class="section" style="background-color: #E0E1DD; width: 45%;">
             <h1>Tutorial</h1>
             <h2 id="tutorial-heading">Introduction</h2>
             <h2 id="tutorial-text">Because Math Composer is a relatively complex app, we have created a tutorial to
                 familiarize you with its layout and functions.</h2>
         </div>
-        <button id="back">Back</button>
-        <div class="section" style="background-color: #E0E1DD; width: 40%;">
+        <img class="button" id="back" src="leftArrow.svg">
+        <div class="section" style="background-color: #E0E1DD; width: 45%;">
             <img class="display" id="tutorial" src="tutorial-0.png">
         </div>
-        <button id="next">Next</button>
+        <img class="button" id="next" src="rightArrow.svg">
+    </div>
+    <div style="display:flex">
+        <div class="section">
+            <h1>Units and Symbols</h1>
+            <h2>In Math Composer, everything you type can be categorized into two things: "units", and
+                "symbols".
+            </h2>
+            <h2>How to select "units" or "symbols":</h2>
+            <p>Use the left and right buttons to move through the equation. The current selected element is highlighted
+                in blue.
+            </p>
+            <img src="selectUnit.gif" style="width: 50%;">
+            <h2>How to edit "units":</h2>
+            <p>
+                Before editing the "inputs" of a "unit", you must first select it. Once it is selected,
+                press the down button to edit its "inputs".
+            </p>
+            <img src="editUnit.gif" style="width: 50%;">
+            <h2>
+                How to navigate within "units":
+            </h2>
+            <p>
+                Now that you have selected the "unit" you want to edit, you need to navigate through the "inputs" to
+                find the correct one you want to change. Use the left and right buttons to move through the "inputs" of
+                the "unit".
+            </p>
+            <img src="navigateUnit.gif" style="width: 50%;">
+            <h2>
+                How to delete elements:
+            </h2>
+            <p>
+                If you have made a typo or want to edit one of the "inputs", you can use the backspace button to delete
+                the "symbol" or "unit" that is highlighted in blue.
+            </p>
+            <img src="delete.gif" style="width: 50%;">
+        </div>
+        <div class="section">
+            <table>
+                <tr>
+                    <td>&nbsp;</td>
+                    <th>Unit</th>
+                    <th>Symbol</th>
+                </tr>
+                <tr>
+                    <th>What it is</th>
+                    <td>Single element</td>
+                    <td>Group of one or more "inputs". Each "input" can be either a "symbol" or another
+                        "unit.""
+                    </td>
+                </tr>
+                <tr>
+                    <th>Identification</th>
+                    <td>Black text</td>
+                    <td>Blue text</td>
+                </tr>
+                <tr>
+                    <th>Examples</th>
+                    <td>tbd</td>
+                    <td>tbd</td>
+                </tr>
+                <tr>
+                    <th>Usage</th>
+                    <td>Add<br>Delete</td>
+                    <td>Add<br>Delete<br>Edit inputs</td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 <script>
