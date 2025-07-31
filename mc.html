@@ -22,12 +22,13 @@
             <h1>Math Composer</h1>
             <h2>Math Composer is an iPad app for writing math equations digitally. It has a large digital keyboard with
                 math symbols and operators.</h2>
+            <a href="https://apps.apple.com/us/app/math-composer/id6743064971">iOS Download</a>
         </div>
         <div class="section">
             <img class="display" src="mc-screenshot.png">
         </div>
     </div>
-    <div style="display:flex">
+    <div class="flex">
         <div class="section" style="background-color: #E0E1DD; width: 45%;">
             <h1>Tutorial</h1>
             <h2 id="tutorial-heading">Introduction</h2>
@@ -40,72 +41,82 @@
         </div>
         <img class="button" id="next" src="rightArrow.svg">
     </div>
-    <div style="display:flex">
-        <div class="section">
-            <h1>Units and Symbols</h1>
-            <h2>In Math Composer, everything you type can be categorized into two things: "units", and
-                "symbols".
-            </h2>
-            <h2>How to select "units" or "symbols":</h2>
-            <p>Use the left and right buttons to move through the equation. The current selected element is highlighted
-                in blue.
-            </p>
-            <img src="selectUnit.gif" style="width: 50%;">
-            <h2>How to edit "units":</h2>
-            <p>
-                Before editing the "inputs" of a "unit", you must first select it. Once it is selected,
-                press the down button to edit its "inputs".
-            </p>
-            <img src="editUnit.gif" style="width: 50%;">
-            <h2>
-                How to navigate within "units":
-            </h2>
-            <p>
-                Now that you have selected the "unit" you want to edit, you need to navigate through the "inputs" to
-                find the correct one you want to change. Use the left and right buttons to move through the "inputs" of
-                the "unit".
-            </p>
-            <img src="navigateUnit.gif" style="width: 50%;">
-            <h2>
-                How to delete elements:
-            </h2>
-            <p>
-                If you have made a typo or want to edit one of the "inputs", you can use the backspace button to delete
-                the "symbol" or "unit" that is highlighted in blue.
-            </p>
-            <img src="delete.gif" style="width: 50%;">
-        </div>
-        <div class="section">
-            <table>
-                <tr>
-                    <td>&nbsp;</td>
-                    <th>Unit</th>
-                    <th>Symbol</th>
-                </tr>
-                <tr>
-                    <th>What it is</th>
-                    <td>Single element</td>
-                    <td>Group of one or more "inputs". Each "input" can be either a "symbol" or another
-                        "unit.""
-                    </td>
-                </tr>
-                <tr>
-                    <th>Identification</th>
-                    <td>Black text</td>
-                    <td>Blue text</td>
-                </tr>
-                <tr>
-                    <th>Examples</th>
-                    <td>tbd</td>
-                    <td>tbd</td>
-                </tr>
-                <tr>
-                    <th>Usage</th>
-                    <td>Add<br>Delete</td>
-                    <td>Add<br>Delete<br>Edit inputs</td>
-                </tr>
-            </table>
-        </div>
+    <div class="section" style="background-color: #E0E1DD">
+        <h1>Units and Symbols</h1>
+        <h2>In Math Composer, everything you type can be categorized into two things: "units", and
+            "symbols".
+        </h2>
+        <table>
+            <tr>
+                <td>&nbsp;</td>
+                <th>Unit</th>
+                <th>Symbol</th>
+            </tr>
+            <tr>
+                <th>What it is</th>
+                <td>Single element</td>
+                <td>Group of one or more "inputs". Each "input" can be either a "symbol" or another
+                    "unit.""
+                </td>
+            </tr>
+            <tr>
+                <th>Identification</th>
+                <td>Black text</td>
+                <td>Blue text</td>
+            </tr>
+            <tr>
+                <th>Examples</th>
+                <td>tbd</td>
+                <td>tbd</td>
+            </tr>
+            <tr>
+                <th>Usage</th>
+                <td>Add<br>Delete</td>
+                <td>Add<br>Delete<br>Edit inputs</td>
+            </tr>
+        </table>
+    </div>
+    <div class="section">
+        <h2>How to select "units" or "symbols":</h2>
+        <p>Use the left and right buttons to move through the equation. The current selected element is highlighted
+            in blue.
+        </p>
+        <video controls>
+            <source src="selectUnit.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h2>How to edit "units":</h2>
+        <p>
+            If you just created a new "unit", such as a fraction, you might want to change its values. Before editing the "inputs" of a "unit", you must first select it as shown above. Once it is selected,
+            press the down button to edit its "inputs".
+        </p>
+        <video controls>
+            <source src="editUnit.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h2>
+            How to navigate within "units":
+        </h2>
+        <p>
+            Now that you have selected the "unit" you want to edit, you need to navigate through the "inputs" to
+            find the correct one you want to change. Use the left and right buttons to move through the "inputs" of
+            the "unit".
+        </p>
+        <video controls>
+            <source src="navigateUnit.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h2>
+            How to delete elements:
+        </h2>
+        <p>
+            If you have made a typo or want to edit one of the "inputs", you can use the backspace button to delete
+            the "symbol" or "unit" that is highlighted in blue.
+        </p>
+        <video controls>
+            <source src="delete.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 </body>
 <script>
@@ -126,7 +137,7 @@
     var tutorialStrings = [
         "Because Math Composer is a relatively complex app, we have created a tutorial to familiarize you with its layout and functions.",
         "This is where the equation that you write is displayed. It will update as you modify the equation using the other keyboards. Each row represents a new equation. Here, you can delete rows. I will later explain how to add new rows.",
-        "",
+        "Coming soon",
         "This shares your equations as an image for use in other applications.",
         "This allows you to switch between the different options on the modular keyboard. Tap once to display the list of options, then select one. Currently, there are algebra, geometry, miscellaneous, alphabet, and Greek keyboards.",
         "This capitalizes the alphabet and Greek keyboards.",
