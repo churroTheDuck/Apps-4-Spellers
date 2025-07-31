@@ -29,14 +29,14 @@
         </div>
     </div>
     <div class="flex">
-        <div class="section" style="background-color: #E0E1DD; width: 45%;">
+        <div class="section" style="background-color: #E0E1DD;">
             <h1>Tutorial</h1>
             <h2 id="tutorial-heading">Introduction</h2>
             <h2 id="tutorial-text">Because Math Composer is a relatively complex app, we have created a tutorial to
                 familiarize you with its layout and functions.</h2>
         </div>
         <img class="button" id="back" src="leftArrow.svg">
-        <div class="section" style="background-color: #E0E1DD; width: 45%;">
+        <div class="section" style="background-color: #E0E1DD;">
             <img class="display" id="tutorial" src="tutorial-0.png">
         </div>
         <img class="button" id="next" src="rightArrow.svg">
@@ -81,7 +81,7 @@
         <p>Use the left and right buttons to move through the equation. The current selected element is highlighted
             in blue.
         </p>
-        <video controls>
+        <video disablepictureinpicture controls controlsList="nofullscreen nodownload noremoteplayback noplaybackrate">
             <source src="selectUnit.mov" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -90,7 +90,7 @@
             If you just created a new "unit", such as a fraction, you might want to change its values. Before editing the "inputs" of a "unit", you must first select it as shown above. Once it is selected,
             press the down button to edit its "inputs".
         </p>
-        <video controls>
+        <video disablepictureinpicture controls controlsList="nofullscreen nodownload noremoteplayback noplaybackrate">
             <source src="editUnit.mov" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -102,7 +102,7 @@
             find the correct one you want to change. Use the left and right buttons to move through the "inputs" of
             the "unit".
         </p>
-        <video controls>
+        <video disablepictureinpicture controls controlsList="nofullscreen nodownload noremoteplayback noplaybackrate">
             <source src="navigateUnit.mov" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -113,7 +113,7 @@
             If you have made a typo or want to edit one of the "inputs", you can use the backspace button to delete
             the "symbol" or "unit" that is highlighted in blue.
         </p>
-        <video controls>
+        <video disablepictureinpicture controls controlsList="nofullscreen nodownload noremoteplayback noplaybackrate">
             <source src="delete.mov" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -136,7 +136,7 @@
     ]
     var tutorialStrings = [
         "Because Math Composer is a relatively complex app, we have created a tutorial to familiarize you with its layout and functions.",
-        "This is where the equation that you write is displayed. It will update as you modify the equation using the other keyboards. Each row represents a new equation. Here, you can delete rows. I will later explain how to add new rows.",
+        "This is where the equation that you write is displayed. It will update as you modify the equation using the other keyboards. Each row represents a new equation. You can delete rows by pressing the trash button. I will later explain how to add new rows.",
         "Coming soon",
         "This shares your equations as an image for use in other applications.",
         "This allows you to switch between the different options on the modular keyboard. Tap once to display the list of options, then select one. Currently, there are algebra, geometry, miscellaneous, alphabet, and Greek keyboards.",
@@ -145,7 +145,7 @@
         "This creates an empty equation on a new line for you to work with.",
         "The contents of this keyboard change depending on the current keyboard selected via the edit menu. There are two types of things that can be typed: operators and symbols.",
         "This keyboard contains all the numbers as well as a period for decimals and the equals sign.",
-        "Use these keys to navigate the equation.",
+        "Use these keys to navigate the equation. A detailed guide on how this works is included below.",
     ]
     document.getElementById("link").addEventListener("click", function () {
         window.open("index.html");
@@ -159,7 +159,7 @@
         }
     })
     document.getElementById("next").addEventListener("click", function () {
-        if (counter < tutorialStrings.length) {
+        if (counter < tutorialStrings.length - 1) {
             counter += 1;
             document.getElementById("tutorial-heading").textContent = tutorialHeadings[counter];
             document.getElementById("tutorial-text").textContent = tutorialStrings[counter];
