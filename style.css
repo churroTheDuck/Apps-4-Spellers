@@ -111,7 +111,6 @@ video {
 
 .link {
     color: #0D1B2A;
-    cursor: pointer;
     margin: 0px;
     padding: 20px 0px 20px 60px;
     font-size: clamp(14px, 1.5vw, 22px);
@@ -142,11 +141,6 @@ video {
     border-radius: 20px;
     padding: 20px;
     transition: transform .2s;
-}
-
-.bubble:hover {
-    cursor: pointer;
-    transform: scale(1.1);
 }
 
 .flex {
