@@ -25,14 +25,14 @@ h1 {
     font-weight: bold;
     font-size: clamp(24px, 4vw, 40px);
     margin: 0px;
-    padding: 20px 10px;
+    padding: 10px;
 }
 
 h2 {
     display: inline-block;
     color: #0D1B2A;
     text-align: left;
-    font-size: clamp(18px, 2.5vw, 32px);
+    font-size: clamp(20px, 2.75vw, 36px);
     font-weight: normal;
     margin: 0px;
     padding: 10px;
@@ -120,6 +120,14 @@ video {
     display: inline-block;
     max-width: 50%;
     height: 100%;
+    object-fit: cover;
+    margin: 0px;
+    padding: 10px;
+}
+
+.largeDisplay {
+    display: inline-block;
+    width: 75vw;
     object-fit: cover;
     margin: 0px;
     padding: 10px;
