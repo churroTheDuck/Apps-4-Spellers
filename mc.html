@@ -31,15 +31,11 @@
     <div class="flex">
         <div class="section" style="background-color: #E0E1DD;">
             <h1>Tutorial</h1>
-            <h2 id="tutorial-heading">Introduction</h2>
-            <h2 id="tutorial-text">Because Math Composer is a relatively complex app, we have created a tutorial to
-                familiarize you with its layout and functions.</h2>
+            <h2 id="tutorial-heading">Layout</h2>
         </div>
-        <img class="button" id="back" src="leftArrow.svg">
         <div class="section" style="background-color: #E0E1DD;">
             <img class="display" id="tutorial" src="tutorial-0.png">
         </div>
-        <img class="button" id="next" src="rightArrow.svg">
     </div>
     <div class="section" style="background-color: #E0E1DD">
         <h1>Units and Symbols</h1>
@@ -115,51 +111,8 @@
     </div>
 </body>
 <script>
-    var counter = 0;
-    var tutorialHeadings = [
-        "Introduction",
-        "Equation Display Area",
-        "Settings",
-        "Share",
-        "Keyboard",
-        "Shift",
-        "Backspace",
-        "New Line",
-        "Modular Keyboard",
-        "Number Keyboard",
-        "Navigtion Buttons",
-    ]
-    var tutorialStrings = [
-        "Because Math Composer is a relatively complex app, we have created a tutorial to familiarize you with its layout and functions.",
-        "This is where the equation that you write is displayed. It will update as you modify the equation using the other keyboards. Each row represents a new equation. You can delete rows by pressing the trash button. I will later explain how to add new rows.",
-        "Coming soon",
-        "This shares your equations as an image for use in other applications.",
-        "This allows you to switch between the different options on the modular keyboard. Tap once to display the list of options, then select one. Currently, there are algebra, geometry, miscellaneous, alphabet, and Greek keyboards.",
-        "This capitalizes the alphabet and Greek keyboards.",
-        "This deletes the currently selected element in the equation, which is highlighted in blue.",
-        "This creates an empty equation on a new line for you to work with.",
-        "The contents of this keyboard change depending on the current keyboard selected via the edit menu. There are two types of things that can be typed: operators and symbols.",
-        "This keyboard contains all the numbers as well as a period for decimals and the equals sign.",
-        "Use these keys to navigate the equation. A detailed guide on how this works is included below.",
-    ]
     document.getElementById("link").addEventListener("click", function () {
         window.open("index.html");
-    })
-    document.getElementById("back").addEventListener("click", function () {
-        if (counter > 0) {
-            counter -= 1;
-            document.getElementById("tutorial-heading").textContent = tutorialHeadings[counter];
-            document.getElementById("tutorial-text").textContent = tutorialStrings[counter];
-            document.getElementById("tutorial").src = "tutorial-" + counter + ".png";
-        }
-    })
-    document.getElementById("next").addEventListener("click", function () {
-        if (counter < tutorialStrings.length - 1) {
-            counter += 1;
-            document.getElementById("tutorial-heading").textContent = tutorialHeadings[counter];
-            document.getElementById("tutorial-text").textContent = tutorialStrings[counter];
-            document.getElementById("tutorial").src = "tutorial-" + counter + ".png";
-        }
     })
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
