@@ -177,7 +177,7 @@ video {
         flex-direction: column;
     }
     .display {
-        max-width: 100%;
+        width: 100%;
     }
     .flex {
         display: block;
