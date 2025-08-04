@@ -119,7 +119,6 @@ video {
 .display {
     display: inline-block;
     max-width: 50%;
-    height: 100%;
     object-fit: cover;
     margin: 0px;
     padding: 10px;
