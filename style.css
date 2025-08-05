@@ -92,7 +92,6 @@ table {
     overflow: hidden;
 }
 
-
 video {
     display: block;
     width: 40%;
@@ -115,6 +114,7 @@ video {
 .link {
     color: #0D1B2A;
     margin: 0px;
+    text-decoration: none;
     padding: 20px 0px 20px 60px;
     font-size: clamp(14px, 1.5vw, 22px);
 }
