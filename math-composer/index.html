@@ -13,12 +13,14 @@
 </head>
 
 <body>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <div class="header">
         <p class="link" id="link">Apps 4 Spellers</p>
     </div>
     <div class="section">
         <h1>Tutorial</h1>
+    </div>
+    <div class="section" style="background-color: #E0E1DD;">
         <div class="flex">
             <div class="info" style="width: 50vw">
                 <h2 id="tutorial-heading">Layout</h2>
@@ -26,16 +28,17 @@
                     The equation display area is where you can view the equations that you type.
                 </p>
                 <p>
-                    The edit menu allows you to share your equation, change your keyboard, delete elements, or add new lines to the equation display area.
+                    The edit menu allows you to share your equation, change your keyboard, delete elements, or add new
+                    lines to the equation display area.
                 </p>
                 <p>
                     The modular keyboard changes depending on the current keyboard selected using the edit menu.
                 </p>
             </div>
-            <img class="display" id="tutorial" src="tutorial-0.png">
+            <img class="display" id="tutorial" src="../assets/layout.png">
         </div>
     </div>
-    <div class="section" style="background-color: #E0E1DD">
+    <div class="section">
         <h2>Units and Symbols</h2>
         <p>In Math Composer, everything you type can be categorized into two things: "units", and
             "symbols".
@@ -75,7 +78,7 @@
             </div>
             <video disablepictureinpicture controls
                 controlsList="nofullscreen nodownload noremoteplayback noplaybackrate">
-                <source src="selectUnit.mp4" type="video/mp4">
+                <source src="../assets/videos/selectUnit.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -91,7 +94,7 @@
             </div>
             <video disablepictureinpicture controls
                 controlsList="nofullscreen nodownload noremoteplayback noplaybackrate">
-                <source src="editUnit.mp4" type="video/mp4">
+                <source src="../assets/videos/editUnit.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -109,7 +112,7 @@
             </div>
             <video disablepictureinpicture controls
                 controlsList="nofullscreen nodownload noremoteplayback noplaybackrate">
-                <source src="navigateUnit.mp4" type="video/mp4">
+                <source src="../assets/videos/navigateUnit.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -129,7 +132,7 @@
             </div>
             <video disablepictureinpicture controls
                 controlsList="nofullscreen nodownload noremoteplayback noplaybackrate">
-                <source src="delete.mp4" type="video/mp4">
+                <source src="../assets/videos/delete.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -137,7 +140,7 @@
 </body>
 <script>
     document.getElementById("link").addEventListener("click", function () {
-        window.open("index.html");
+        window.open("../home");
     })
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
