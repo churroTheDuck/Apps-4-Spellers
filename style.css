@@ -115,7 +115,7 @@ video {
     color: #0D1B2A;
     margin: 0px;
     text-decoration: none;
-    padding: 20px 0px 20px 60px;
+    padding: 20px 60px 20px 60px;
     font-size: clamp(14px, 1.5vw, 22px);
 }
 
@@ -223,4 +223,28 @@ video::-webkit-media-controls-volume-slider {
 
 video::-webkit-media-controls-mute-button {
     display: none;
+}
+
+#copied-popup {
+    position: absolute;
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: 0px;
+    background-color: #E0E1DD;
+    color: #0D1B2A;
+    padding: 6px 12px;
+    font-size: clamp(12px, 1.5vw, 16px);
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#email {
+    position: relative;
+}
+
+#copied-popup.show {
+    opacity: 1;
 }

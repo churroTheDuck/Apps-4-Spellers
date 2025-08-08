@@ -13,14 +13,36 @@
 </head>
 
 <body>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../shared.css" />
     <div class="header">
         <a class="link" id="link" href="../index.html">Apps 4 Spellers</a>
     </div>
     <div class="section">
-        <h1>Math Composer Tutorial</h1>
+        <h1>App support</h1>
+        <p>Feel free to make posts or email for feature requests, bug reports, or general feedback!</p>
+        <p>- <a href="https://www.facebook.com/groups/1173593146603920/">Facebook group</a></p>
+        <p>-
+            <a id="email" style="color: blue; text-decoration: underline; cursor: pointer">
+                support@apps4spellers.org
+                <span id="copied-popup">
+                    Copied!
+                </span></a>
+        </p>
     </div>
 </body>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+    document.getElementById("email").addEventListener("click", function () {
+        navigator.clipboard.writeText("support@apps4spellers.org");
+
+        const popup = document.getElementById("copied-popup");
+        popup.classList.add("show");
+
+        setTimeout(() => {
+            popup.classList.remove("show");
+        }, 1500); // hide after 1.5 seconds
+    });
+
+</script>
 
 </html>
