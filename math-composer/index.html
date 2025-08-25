@@ -92,10 +92,15 @@
                     highlighted in blue.
                 </p>
             </div>
-            <video disablepictureinpicture nocontrols>
-                <source src="../assets/videos/selectUnit.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+            <video class="tutorial-video" playsinline muted preload="metadata">
+                <source src="../assets/videos/fixed_selectUnit.mp4" type="video/mp4">
             </video>
+
+            <div class="video-controls">
+                <button class="play-btn">Play</button>
+                <button class="pause-btn">Pause</button>
+                <button class="reset-btn">Reset</button>
+            </div>
         </div>
         <div class="bubble">
             <div class="info">
@@ -103,10 +108,14 @@
                 <p>- Select the special operator as shown above</p>
                 <p>- Press down arrow to select an input</p>
             </div>
-            <video disablepictureinpicture nocontrols>
-                <source src="../assets/videos/editUnit.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+            <video class="tutorial-video" playsinline muted preload="metadata">
+                <source src="../assets/videos/fixed_editUnit.mp4" type="video/mp4">
             </video>
+            <div class="video-controls">
+                <button class="play-btn">Play</button>
+                <button class="pause-btn">Pause</button>
+                <button class="reset-btn">Reset</button>
+            </div>
         </div>
         <div class="bubble">
             <div class="info">
@@ -117,10 +126,14 @@
                     - Use the left and right buttons to move through the "inputs" of the "special operator".
                 </p>
             </div>
-            <video disablepictureinpicture nocontrols>
-                <source src="../assets/videos/navigateUnit.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+            <video class="tutorial-video" playsinline muted preload="metadata">
+                <source src="../assets/videos/fixed_navigateUnit.mp4" type="video/mp4">
             </video>
+            <div class="video-controls">
+                <button class="play-btn">Play</button>
+                <button class="pause-btn">Pause</button>
+                <button class="reset-btn">Reset</button>
+            </div>
         </div>
         <div class="bubble">
             <div class="info">
@@ -139,13 +152,40 @@
                     delete the "symbol" or "special operator" that is highlighted in blue.
                 </p>
             </div>
-            <video disablepictureinpicture nocontrols>
-                <source src="../assets/videos/delete.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+            <video class="tutorial-video" playsinline muted preload="metadata">
+                <source src="../assets/videos/fixed_delete.mp4" type="video/mp4">
             </video>
+            <div class="video-controls">
+                <button class="play-btn">Play</button>
+                <button class="pause-btn">Pause</button>
+                <button class="reset-btn">Reset</button>
+            </div>
         </div>
     </div>
 </body>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.bubble').forEach(function (bubble) {
+            const video = bubble.querySelector('.tutorial-video');
+            const playBtn = bubble.querySelector('.play-btn');
+            const pauseBtn = bubble.querySelector('.pause-btn');
+            const resetBtn = bubble.querySelector('.reset-btn');
+
+            if (video && playBtn && pauseBtn && resetBtn) {
+                playBtn.addEventListener('click', function () {
+                    video.play();
+                });
+                pauseBtn.addEventListener('click', function () {
+                    video.pause();
+                });
+                resetBtn.addEventListener('click', function () {
+                    video.pause();
+                    video.currentTime = 0;
+                });
+            }
+        });
+    });
+</script>
 
 </html>
