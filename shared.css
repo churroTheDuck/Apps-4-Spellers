@@ -119,6 +119,14 @@ video {
     font-size: clamp(14px, 1.5vw, 22px);
 }
 
+.smallLink {
+    color: #0D1B2A;
+    margin: 0px;
+    text-decoration: none;
+    padding: 20px 20px 20px 20px;
+    font-size: clamp(14px, 1.5vw, 22px);
+}
+
 .display {
     display: inline-block;
     width: 50%;
